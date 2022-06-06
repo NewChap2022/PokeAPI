@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2C71B8;
+    --secondary: #FFCB05;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo-container p {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+}
+
+.nav-container {
+    background-image: url(../images/Pikachu-PNG-Transparent-Image.png);
+    background-size: 276px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+
+.nav a {
+    text-decoration: none;
+    background-color: var(--primary);
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Joti One', cursive;
+    font-size: 20px;
+    width: 120px;
+}
+
+.nav a:hover {
+    background-color: var(--secondary);
+    color: black;
+}
+
+.content {
+    padding: 5px;
+}
+
+.content h2 {
+    font-family: 'Kaushan Script', cursive;
+    text-decoration: underline;
+}
+
+.content p {
+    margin: 15px;
+    font-family: 'Crete Round', serif;
+    font-size: 20px;
+}
+
+.pokeball {
+    width: 50px;
+    margin: 5px;
+}
+
+.content:nth-child(odd) {
+    background-color: var(--primary);
+    color: white;
+}
+
+.content:nth-child(odd) a {
+    color: white;
+}
+
+.content:nth-child(even) {
+    background-color: var(--secondary);
+}
+
+.content:nth-child(even) h2 {
+    text-align: right;
+}
+
+#pokémon-games h3 {
+    font-size: 30px;
+    -webkit-text-stroke: 1.5px black
+}
+
+.game-container img {
+    width: 200px
+}
+
+#game-list-intro {
+    margin: 20px;
+}
+
+.pokemon-search {
+    text-align: center;
+}
+
+.pokemon-search input {
+    width: 300px;
+    text-align: center;
+}
+
+.pokemon-search button {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    margin: 5px;
+    width: 150px;
+    font-family: 'Joti One', cursive;
+}
+
+.pokemon-search button:hover {
+    background-color: var(--secondary);
+    color: black;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5)
+}
