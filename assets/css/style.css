@@ -122,3 +122,51 @@
 .pokemon-look img {
     width: 100%;
 }
+
+menu {
+    position: fixed;
+    top: 100px;
+    left: 12px;
+    width: 0;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Joti One', cursive;
+    z-index:1;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+menu a:hover {
+    background-color:rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
+menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+#menubtn {
+    font-size: 30px;
+    cursor: pointer;
+    position:fixed;
+    top: 30px;
+    right: 12px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+#menubtn p {
+    font-size: 15px;
+}

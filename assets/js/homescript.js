@@ -3,6 +3,8 @@ var pokemonSearchEl = document.querySelector(".pokemon-search");
 var pokemonStatContainer = document.querySelector(".pokemon-stat-container");
 var pokemonSearchFormEl = document.querySelector(".pokemon-search-form");
 var randomSearchBtn = document.querySelector(".randombtn");
+var menuBtn = document.querySelector("#menubtn");
+var closeBtn = document.querySelector(".closebtn")
 
 var displayPokemonStats = function (data) {
     pokemonApiEl.classList.add("row");
@@ -29,7 +31,7 @@ var displayPokemonStats = function (data) {
         pokemonInfoEl.append(pokemonLookEl, pokemonStatEl);
         pokemonStatContainer.append(pokemonInfoEl);
 
-        pokemonStatContainer.scrollIntoView();
+        // pokemonStatContainer.scrollIntoView();
 };
 
 var fetchPokemonApi = function (name) {
@@ -68,6 +70,25 @@ var randomButtonHandler = function () {
     fetchPokemonApi(randomId);
 }
 
+var openMenuHandler = function () {
+    document.querySelector("menu").style.width = "200px";
+}
+
+var closeMenuHandler = function (event) {
+    document.querySelector("menu").style.width = "0";
+    event.preventDefault();
+}
+
 pokemonSearchFormEl.addEventListener("submit", formSubmitHandler);
 randomSearchBtn.addEventListener("click", randomButtonHandler);
+menuBtn.addEventListener("click", openMenuHandler);
+closeBtn.addEventListener("click", closeMenuHandler);
+
+window.addEventListener("scroll", function() {
+ if(window.scrollY < 170) {
+    menuBtn.style.display = "none";
+} else {
+    menuBtn.style.display = "block";
+} 
+})
 
