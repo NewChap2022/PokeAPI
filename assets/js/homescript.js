@@ -31,7 +31,7 @@ var displayPokemonStats = function (data) {
         pokemonInfoEl.append(pokemonLookEl, pokemonStatEl);
         pokemonStatContainer.append(pokemonInfoEl);
 
-        // pokemonStatContainer.scrollIntoView();
+        pokemonStatContainer.scrollIntoView();
 };
 
 var fetchPokemonApi = function (name) {
