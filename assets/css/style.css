@@ -77,7 +77,7 @@
     text-align: right;
 }
 
-#pokémon-games h3 {
+#pokemon-games h3 {
     font-size: 30px;
     -webkit-text-stroke: 1.5px black
 }
@@ -95,7 +95,7 @@
 }
 
 .pokemon-search input {
-    width: 300px;
+    width: fit-content;
     text-align: center;
 }
 
@@ -112,4 +112,13 @@
     background-color: var(--secondary);
     color: black;
     box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5)
+}
+
+.pokemon-info {
+    background-color:rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.pokemon-look img {
+    width: 100%;
 }
